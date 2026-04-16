@@ -217,15 +217,20 @@ Počet vyhotovení: 1x zip soubor s prací a kompletními materiály.
 
 ``` tree
 /projekt/
-  ├── README.md (stručný přehled projektu)
-  ├── paper.pdf (vědecký článek)
-  ├── poster.pdf (poster A3)
+  ├── README.md (stručný přehled projektu a návod k obsahu)
+  ├── paper/ (vědecký článek - např. PDF, zdrojové soubory, přílohy)
+  ├── poster/ (poster A3 a případné exporty)
   ├── dokumentace/
-  │   └── technicka_dokumentace.pdf nebo .md
   ├── prezentace/
-  │   └── obhajoba.pptx
   └── projekt/ (zdrojové kódy, modely, schémata atd.)
 ```
+
+**Jednotné minimum pro všechny:**
+
+- v kořeni musí být `README.md`
+- musí existovat složky `paper/`, `poster/`, `dokumentace/`, `prezentace/`, `projekt/`
+- konkrétní názvy souborů uvnitř mohou být různé podle typu práce
+- pokud je struktura uvnitř některé složky nestandardní, musí to být stručně vysvětleno v `README.md`
 
 ---
 
