@@ -93,12 +93,12 @@ Počet vyhotovení: 1x zip soubor s prací a kompletními materiály.
 
 ```tree
 /projekt_kotlas/
-  ├── README.md (stručný přehled projektu)
-  ├── paper.pdf (vědecký článek)
-  ├── poster.pdf (poster A3)
-  ├── dokumentace/
-  │   └── technicka_dokumentace.pdf nebo .md
-  ├── prezentace/
-  │   └── obhajoba.pptx
+  ├── README.md (stručný přehled projektu, popis obsahu a co otevřít jako první)
+  ├── paper/ (vědecký článek a případné zdrojové soubory nebo přílohy)
+  ├── poster/ (finální poster a případné exporty)
+  ├── dokumentace/ (jedna nebo více částí technické dokumentace)
+  ├── prezentace/ (např. PPTX, PDF nebo HTML prezentace)
   └── projekt/ (zdrojové kódy)
 ```
+
+Uvnitř jednotlivých složek mohou být různé typy souborů podle charakteru projektu. Pokud není struktura uvnitř složek na první pohled zřejmá, musí být popsána v `README.md`.
