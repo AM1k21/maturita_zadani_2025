@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obhajoba maturitního projektu - GHB Merch</title>
+    <style>
+        :root {
+            --primary: #fd8549;
+            --bg-color: #f9fafb;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .slide-container {
+            flex-grow: 1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 10%;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            max-width: 1000px;
+            animation: fadeIn 0.4s ease-out;
+        }
+        .slide.active { display: block; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+        }
+        h2 {
+            font-size: 2.5rem;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+        p, li { font-size: 1.5rem; line-height: 1.6; color: var(--text-muted); }
+        ul { margin-top: 1rem; padding-left: 2rem; }
+        li { margin-bottom: 1rem; }
+        .highlight { color: var(--primary); font-weight: bold; }
+
+        .diagram {
+            background: white; padding: 2rem; border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            font-family: monospace; font-size: 1.2rem;
+            white-space: pre; overflow-x: auto;
+            color: var(--text-main);
+            border-left: 4px solid var(--primary);
+        }
+
+        .controls {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1rem 2rem; background: white;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+            z-index: 10;
+        }
+        .btn {
+            background-color: white; border: 2px solid var(--primary);
+            color: var(--primary); font-size: 1.2rem; padding: 0.5rem 1.5rem;
+            border-radius: 5px; cursor: pointer; transition: all 0.2s;
+        }
+        .btn:hover { background-color: var(--primary); color: white; }
+        .progress {
+            background: #e5e7eb; height: 8px; border-radius: 4px;
+            width: 300px; overflow: hidden;
+        }
+        .progress-bar {
+            background: var(--primary); height: 100%;
+            width: 0%; transition: width 0.3s;
+        }
+        .slide-counter { font-size: 1.2rem; font-weight: bold; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+
+    <div class="slide-container">
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <h1>GHB Merch</h1>
+            <p style="font-size: 2rem; color: var(--text-main);">Oficiální e-shop pro školní merch Gymnázia Havlíčkův Brod</p>
+            <p style="margin-top: 3rem;"><strong>Autor:</strong> Jakub Jakůbek</p>
+            <p><strong>Předmět:</strong> Informatika</p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <h2>Cíl a motivace projektu</h2>
+            <ul>
+                <li>Nahradit neefektivní ruční procesy při objednávání školního oblečení.</li>
+                <li>Vytvořit webovou aplikaci pro studenty i zaměstnance s integrovaným katalogem.</li>
+                <li>Umožnit sběr zakázek do <span class="highlight">hromadných objednávek (tzv. batches)</span> kvůli naplnění minimálního počtu kusů.</li>
+                <li>Digitalizovat výdej hotového merche s vysokou mírou zabezpečení.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <h2>Klíčové funkce aplikace</h2>
+            <ul>
+                <li><strong>Katalog a košík:</strong> Procházení barev, velikostí a správa košíku v localStorage.</li>
+                <li><strong>Lifecycle objednávky:</strong> Od "pending_batch" až po status "completed".</li>
+                <li><strong>Automatické e-maily:</strong> Upozornění na změny stavů přes Gmail SMTP šablony (Nodemailer).</li>
+                <li><strong>Admin panel:</strong> Kompletní CMS pro správu položek a řešení žádostí o změnu (storno/úpravy).</li>
+            </ul>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+            <h2>Autentizace a přístupy</h2>
+            <p>Zabezpečení zajišťuje moderní knihovna <strong>better-auth</strong>.</p>
+            <ul>
+                <li><strong>Microsoft SSO:</strong> Bezpečné přihlášení výhradně přes školní účty v tenantu @ghb.cz.</li>
+                <li>Zákaz manuální registrace pomocí emailu a hesla pro školní doménu (prevence duplicit).</li>
+                <li><strong>Systém 3 rolí:</strong> User, Admin, Superadmin.</li>
+                <li>Server hooks (middleware) plně chrání neveřejné routy a ověřují oprávnění na backendu.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+            <h2>Architektura a Tech Stack</h2>
+            <ul>
+                <li><strong>Frontend & Backend:</strong> SvelteKit 2.x, TypeScript 5.x, Node.js 24.</li>
+                <li><strong>Databáze:</strong> PostgreSQL 16 mapovaná přes Drizzle ORM.</li>
+                <li><strong>Reverse Proxy:</strong> Caddy 2 (automatické HTTPS a servírování statických dat).</li>
+            </ul>
+            <div class="diagram">
+Prohlížeč ---> Caddy ---> SvelteKit <---> PostgreSQL
+ (klient)     (proxy)     (Node.js)          (DB)
+                 |
+            [Uploads AVIF]</div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="slide">
+            <h2>Optimalizace multimédií</h2>
+            <p>Vlastní pipeline pro zpracování obrázků přímo na serveru:</p>
+            <ul>
+                <li>Každý nahrávaný soubor projde výpočtem <span class="highlight">SHA-256 hashe</span> pro deduplikaci a úsporu místa (early exit).</li>
+                <li>Následuje proces knihovnou <strong>Sharp</strong>: Resize a tvrdá konverze do úsporného formátu <span class="highlight">AVIF</span>.</li>
+                <li>Pro maximální výkon servíruje obrázky přímo Caddy (proxy) s agresivním cachováním, čímž ulevuje Node.js serveru.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="slide">
+            <h2>Kryptografie a QR výdej</h2>
+            <p>Při vydávání velkého množství merche hrozí podvody s objednávkami. Řešení:</p>
+            <ul>
+                <li>Pro každou objednávku vygeneruje server dynamický QR kód.</li>
+                <li>V něm je zakódován elektronický podpis vypočítaný metodou <span class="highlight">HMAC SHA-256</span> pomocí serverového secret klíče.</li>
+                <li>Administrátor z webu spustí čtečku, naskenuje žákův mobil a systém podvržené kódy automaticky ihned zamítne.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="slide">
+            <h2>Modelování dat a Databáze</h2>
+            <ul>
+                <li>Centrem návrhu je robustní relační schéma v PostgreSQL.</li>
+                <li>Uchovávání <span class="highlight">historických snapshotů</span> (jméno, e-mail, barva, cena položky) v tabulce `order_items` místo cizích klíčů – změna nebo smazání produktu v budoucnu nenaruší účetnictví starých objednávek.</li>
+                <li>Použití nativních databázových ENUM typů pro stavové automaty a strukturovaných JSONB formátů pro velikosti.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="slide">
+            <h2>Docker a Produkční Nasazení</h2>
+            <ul>
+                <li>Projekt je plně kontejnerizován pro snadné zprovoznění bez instalace závislostí na serveru.</li>
+                <li>Základem je soubor <code>docker-compose.prod.yml</code> pro síťování oddělených služeb.</li>
+                <li>Sdílené Docker Volumes se starají o perzistenci databáze a nahraných obrázků.</li>
+                <li>Aplikace implementuje vlastní barevný HTTP Logger, což zjednodušuje debugging a monitoring provozu.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="slide">
+            <h1 style="margin-top: 10%;">Děkuji za pozornost!</h1>
+            <p style="font-size: 2rem;">Aplikace spolehlivě běží v produkci.</p>
+            <p>Nyní je prostor pro vaše dotazy.</p>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button class="btn" onclick="prevSlide()">Předchozí</button>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+            <span class="slide-counter" id="counter">1 / 10</span>
+            <div class="progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+        <button class="btn" onclick="nextSlide()">Další</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const progressBar = document.getElementById('progressBar');
+        const counter = document.getElementById('counter');
+
+        function updateUI() {
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentSlide);
+            });
+            counter.innerText = `${currentSlide + 1} / ${totalSlides}`;
+            progressBar.style.width = `${((currentSlide + 1) / totalSlides) * 100}%`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateUI();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateUI();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        // Initialize UI
+        updateUI();
+
+        // Focus window to capture keyboard events immediately in canvas
+        window.focus();
+    </script>
+</body>
+</html>
