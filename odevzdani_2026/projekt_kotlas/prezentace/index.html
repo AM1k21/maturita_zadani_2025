@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project manager - Maturitní zkouška</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-gradient"></div>
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+    <!-- Presentation Container -->
+    <main class="deck" id="deckContainer">
+        
+        <!-- SLIDE 1: Úvod -->
+        <section class="slide active">
+            <div class="h-center">
+                <h3>Maturitní projekt</h3>
+                <h1>Project Manager</h1>
+                <p class="lead" style="text-align: center;">Informační systém pro řízení zakázek, dokumentů a přístupových práv v malé firmě</p>
+                <div class="hero-chips" style="justify-content: center;">
+                    <span class="chip php">Symfony 7.4 + PHP 8.3</span>
+                    <span class="chip db">PostgreSQL 15</span>
+                    <span class="chip">Docker</span>
+                </div>
+                <p class="note" style="margin-top: 3rem;">Autor: Jiří Kotlas &bull; Gymnázium Havlíčkův Brod &bull; Obhajoba: 2026</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: Motivace a Cíle -->
+        <section class="slide">
+            <h2>Proč tento projekt vznikl?</h2>
+            <div class="content-area grid-2">
+                <div class="card">
+                    <h3>Co menší firmy trápí?</h3>
+                    <ul style="font-size: 1.1rem; line-height: 1.6;">
+                        <li><span class="highlight">Ztráta informací:</span> Data jsou rozházená v e-mailech, Excelu a na discích.</li>
+                        <li><span class="highlight">Chaos v dokumentech:</span> Často se neví, která verze smlouvy nebo nabídky je ta konečná.</li>
+                        <li><span class="highlight">Ztráta času:</span> Zjistit, v jakém stavu se reálně zakázka nachází, zabírá zbytečně moc času.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Co mé řešení přináší?</h3>
+                    <ul style="font-size: 1.1rem; line-height: 1.6;">
+                        <li><span class="highlight">Vše na jednom místě:</span> Přehledný tok od prvotní nabídky až po zaplacenou fakturu.</li>
+                        <li><span class="highlight">Jasná pravidla:</span> Systém striktně hlídá, kdo má k jakým složkám přístup.</li>
+                        <li><span class="highlight">Méně starostí pro vedení:</span> Okamžitá a bezchybná data pro rychlé rozhodování.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Alternativy -->
+        <section class="slide">
+            <h2>Proč nevyužít existující řešení na trhu?</h2>
+            <p style="text-align:center; color: var(--accent-color); font-size: 1.1rem; margin-top: -1rem; margin-bottom: 2rem;">Zavedené systémy (Caflou, Raynet) jsou kvalitní, pro malé firmy ale přinášejí úskalí.</p>
+            <div class="content-area grid-3">
+                <div class="card">
+                    <h3>Přizpůsobitelnost</h3>
+                    <ul>
+                        <li>Krabicová řešení nutí měnit zvyky.</li>
+                        <li>Můj systém je <strong>přesně na míru</strong>.</li>
+                        <li>Díky modularitě se snadno upraví.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Cena a licence</h3>
+                    <ul>
+                        <li>Drahé poplatky <strong>za každého uživatele</strong>.</li>
+                        <li>Studentský vývoj ušetřil prvotní náklady.</li>
+                        <li>Firma neplatí <strong>žádné měsíční paušály</strong>.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Kontrola dat</h3>
+                    <ul>
+                        <li>Možnost běžet <strong>zcela lokálně</strong>.</li>
+                        <li>Data zůstávají pouze na firemním serveru.</li>
+                        <li>Žádné sdílení do cloudů třetích stran.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Technologický stack -->
+        <section class="slide">
+            <h2>Zvolené technologie</h2>
+            <div class="content-area grid-2">
+                <div class="card" style="border-left: 4px solid #777bb4;">
+                    <h3 style="color: #777bb4; margin-top: 0; display: flex; align-items: center; gap: 0.55rem;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" style="width: 24px; height: 24px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" alt="Symfony" style="width: 24px; height: 24px; filter: invert(1);">PHP 8.3 & Symfony 7.4</h3>
+                    <p>Moderní PHP zaručuje rychlý chod. Framework <strong>Symfony</strong> jsem vybral pro jeho mimořádně přísnou a srozumitelnou strukturu a prvotřídní vrstvu zabezpečení, která se ve firmách osvědčila.</p>
+                </div>
+                <div class="card" style="border-left: 4px solid #336791;">
+                    <h3 style="color: #336791; margin-top: 0; display: flex; align-items: center; gap: 0.55rem;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" style="width: 24px; height: 24px;">PostgreSQL 15</h3>
+                    <p>Extrémně stabilní databáze, ideální pro zachování silných informačních vazeb (mezi klienty, projekty a fakturami) beze strachu z toho, že by se informace někde "rozpojily".</p>
+                </div>
+                <div class="card" style="border-left: 4px solid #2496ed;">
+                    <h3 style="color: #2496ed; margin-top: 0; display: flex; align-items: center; gap: 0.55rem;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" style="width: 24px; height: 24px;">Docker</h3>
+                    <p>Virtualizace. Stará se o to, že systém poběží všude úplně stejně, nezávisle na typu počítače. Prvotní nasazení u firmy je díky izolaci kontejnerů velmi rychlé.</p>
+                </div>
+                <div class="card" style="border-left: 4px solid #563d7c;">
+                    <h3 style="color: #563d7c; margin-top: 0; display: flex; align-items: center; gap: 0.55rem;"><img src="https://api.iconify.design/vscode-icons:file-type-twig.svg" alt="Twig" style="width: 24px; height: 24px; object-fit: contain;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" style="width: 24px; height: 24px;">Twig & Bootstrap 5</h3>
+                    <p>Pro rychlé, čisté a přehledné vykreslování v prohlížeči přímo ze serveru. Stránky nejsou zbytečně zahlcené těžkým Javascriptem a tím pádem jsou velmi svižné a responzivní.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Architektura -->
+        <section class="slide">
+            <h2>Architektura a fungování</h2>
+            <div class="content-area grid-2" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 2.5rem;">
+                <div class="card" style="background: transparent; border: none; box-shadow: none;">
+                    <ul class="large-list" style="font-size: 1.3rem; line-height: 1.8; list-style-type: square; padding-left: 1rem;">
+                        <li><strong class="highlight">Ověřený MVC vzor:</strong><br>Striktně oddělená data od vzhledu brání zmatkům.</li>
+                        <li style="margin-top: 1rem;"><strong class="highlight">Monolit zlevňuje údržbu:</strong><br>Web a databáze na jednom serveru bez složitých API.</li>
+                        <li style="margin-top: 1rem;"><strong class="highlight">Bezpečné ORM:</strong><br>Ochranu před hackery a SQL injekcemi zajišťuje Doctrine.</li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <!-- Pouziti invert filtru pro prevod bileho pozadi diagramu na tmave a uprava kontrastu -->
+                    <img src="../dokumentace/images/01-architektura-systemu.png" alt="Architektura" style="max-height: 360px; max-width: 100%; border-radius: 8px; filter: invert(0.9) contrast(1.2) hue-rotate(180deg); box-shadow: 0 5px 20px rgba(0,0,0,0.6); cursor: pointer;" onclick="openModal(this.src)">
+                    <p style="font-size: 0.9rem; color: #888; margin-top: 1rem;">Invertovaný pohled na Server-Side architekturu</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: Ověření v praxi -->
+        <section class="slide">
+            <h2>Ověření v praxi</h2>
+            <div class="content-area grid-3" style="margin-top: 6rem;">
+                <div class="card" style="border-top: 4px solid #f59e0b;">
+                    <h3 style="margin-bottom: 0.7rem;">Testovací VPS</h3>
+                    <p>Aplikace byla nasazena na testovací VPS od Forpsi, kde běžela v podmínkách blízkých reálnému provozu.</p>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--accent-color);">
+                    <h3 style="margin-bottom: 0.7rem;">Reální uživatelé</h3>
+                    <p>Systém byl vyzkoušen reálnými uživateli firmy na běžných scénářích práce se zakázkami a dokumenty.</p>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--secondary-accent);">
+                    <h3 style="margin-bottom: 0.7rem;">Další krok</h3>
+                    <p>Po finálním doladění je plánované nasazení do produkčního provozu jako hlavní interní systém firmy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: Životní cyklus a Provozní výsledky -->
+        <section class="slide">
+            <h2>Ukázka procesu</h2>
+            
+
+            <div class="content-area slide7-area">
+                <div class="pipeline-shell">
+                    <div class="pipeline-track"></div>
+                    <div class="pipeline-row">
+                        <div class="pipeline-step phase-a"><span class="pipeline-num">1</span><span class="pipeline-label">Uživatel</span></div>
+                        <span class="pipeline-arrow phase-a">›</span>
+                        <div class="pipeline-step phase-a"><span class="pipeline-num">2</span><span class="pipeline-label">Klient</span></div>
+                        <span class="pipeline-arrow phase-a">›</span>
+                        <div class="pipeline-step phase-a"><span class="pipeline-num">3</span><span class="pipeline-label">Projekt</span></div>
+                        <span class="pipeline-arrow phase-b">›</span>
+                        <div class="pipeline-step phase-b"><span class="pipeline-num">4</span><span class="pipeline-label">Dokumenty</span></div>
+                        <span class="pipeline-arrow phase-b">›</span>
+                        <div class="pipeline-step phase-b"><span class="pipeline-num">5</span><span class="pipeline-label">Fakturace</span></div>
+                        <span class="pipeline-arrow phase-b">›</span>
+                        <div class="pipeline-step phase-b"><span class="pipeline-num">6</span><span class="pipeline-label">Report</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 8: Výhled -->
+        <section class="slide">
+            <h2>Plán dalšího rozvoje platformy</h2>
+            <div class="content-area grid-3">
+                <div class="card">
+                    <h3>Automatizace sestav</h3>
+                    <p>Vkládání dat přímo do dynamicky vygenerovaných zpráv <strong>(formát PDF)</strong>, konec zdlouhavým manuálním přepisům od nadepsání na portál.</p>
+                </div>
+                <div class="card">
+                    <h3>API Integrace</h3>
+                    <p>Využití chráněného komunikačního můstku přes <strong>REST / Webhooks protokoly</strong>, pro předávání tržeb pod externí účetní nebo státní správu spolehlivě z centrálního zdroje.</p>
+                </div>
+                <div class="card">
+                    <h3>AI podpora</h3>
+                    <p>Zapracování strojového průzkumu nad historickými úkoly k odhadu volné firemní kapacity či ke zrychlení operativních čtení vložených externích skenů z let nedávno uplynulých.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 9: Závěr -->
+        <section class="slide">
+            <div class="h-center">
+                <h1 style="font-size: 4rem;">Děkuji Vám za pozornost</h1>
+                <p class="lead" style="text-align: center; margin-top: 1rem;">Nyní je prostor pro dotazy expertní komise.</p>
+                
+                <div class="card" style="margin-top: 3rem; text-align: left; background: transparent; border-color: var(--accent-color);">
+                    <ul style="list-style: none;">
+                        <li><strong>Autor projektu:</strong> Jiří Kotlas (Gymnázium Havlíčkův Brod)</li>
+                        <li><strong>Technologické jádro:</strong> PHP 8.3 / Symfony 7.4 / PostgreSQL 15</li>
+                        <li><strong>Dopad díla:</strong> Komplexní sjednocení pracovního stolu se striktní logikou, eliminující administrativní chaos dříve nespecifikovaných M:N vazeb firmy na trhu lokálním i vzdáleném.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Presentation Controls UI -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
+    <div class="controls">
+        <button class="btn" id="prevBtn">Předchozí</button>
+        <span style="font-family: var(--font-code);"><span id="currNum">1</span>/<span id="totalNum">15</span></span>
+        <button class="btn" id="nextBtn">Další</button>
+        <button class="btn" id="fullBtn">Fullscreen</button>
+    </div>
+
+    <!-- Global Image Modal -->
+    <div id="imageModal" class="image-modal" onclick="this.classList.remove('active')">
+        <img id="modalImage" src="" alt="Fullscreen Diagram">
+    </div>
+
+    <!-- Presentation Script -->
+    <script>
+        const deck = document.getElementById('deckContainer');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const fullBtn = document.getElementById('fullBtn');
+        const currNum = document.getElementById('currNum');
+        const totalNum = document.getElementById('totalNum');
+        const progressBar = document.getElementById('progressBar');
+        
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        
+        totalNum.innerText = totalSlides;
+
+        function updateDeck() {
+            deck.style.transform = `translateX(-${currentSlide * 100}vw)`;
+            
+            slides.forEach((slide, idx) => {
+                if(idx === currentSlide) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            currNum.innerText = currentSlide + 1;
+            progressBar.style.width = `${((currentSlide) / (totalSlides - 1)) * 100}%`;
+            
+            prevBtn.style.opacity = currentSlide === 0 ? '0.3' : '1';
+            nextBtn.style.opacity = currentSlide === totalSlides - 1 ? '0.3' : '1';
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateDeck();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateDeck();
+            }
+        }
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        function openModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = src;
+            modal.classList.add('active');
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        fullBtn.addEventListener('click', toggleFullScreen);
+
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('imageModal');
+            if (modal && modal.classList.contains('active')) {
+                if (e.key === 'Escape' || e.key === ' ') {
+                    modal.classList.remove('active');
+                    e.preventDefault();
+                }
+                return;
+            }
+
+            if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                e.preventDefault();
+                prevSlide();
+            } else if (e.key === 'f' || e.key === 'F') {
+                toggleFullScreen();
+            }
+        });
+
+        updateDeck();
+    </script>
+</body>
+</html>
