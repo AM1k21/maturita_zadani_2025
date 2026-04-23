@@ -21,4 +21,4 @@ Finální odevzdání studenta Adama Mikulice.
   - `Komunikační modul pro bezpilotní letoun.pptx` (prezentace)
   - `Komunikační modul pro bezpilotní letoun.pdf` (export prezentace do PDF)
 - `projekt/`
-  - složka `projekt/` zde není, projekt je přiložen jako archiv `projekt.zip`
+  - `projekt.zip` -složky projektu
