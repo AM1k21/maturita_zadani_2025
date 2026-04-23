@@ -1,0 +1,92 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "🎓 Maturita 2026 — přehled prací" [level=1] [ref=e4]
+      - generic [ref=e5]: Gymnázium Havlíčkův Brod · Informatika · vedoucí Ing. Adam Ferencz · deadline 30. 4. 2026
+    - navigation [ref=e6]:
+      - link "Přehled" [ref=e7] [cursor=pointer]:
+        - /url: "#/"
+      - link "Obecné zadání" [ref=e8] [cursor=pointer]:
+        - /url: README.md
+  - main [ref=e9]:
+    - generic [ref=e11]:
+      - generic [ref=e12] [cursor=pointer]:
+        - heading "Josef Holeček" [level=2] [ref=e13]
+        - generic [ref=e14]: Webový portál pro kroužky a trenéry v Havlíčkově Brodě
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - text: 🎤 Prezentace
+            - generic [ref=e17]: PDF
+          - generic [ref=e18]:
+            - text: 📑 Článek
+            - generic [ref=e19]: PDF
+          - generic [ref=e20]:
+            - text: 🖼️ Poster
+            - generic [ref=e21]: PDF
+          - generic [ref=e22]:
+            - text: 📚 Dokumentace
+            - generic [ref=e23]: MD
+      - generic [ref=e24] [cursor=pointer]:
+        - heading "Jakub Jakůbek" [level=2] [ref=e25]
+        - generic [ref=e26]: Webová aplikace pro správu a distribuci školních propagačních předmětů
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - text: 🎤 Prezentace
+            - generic [ref=e29]: HTML
+          - generic [ref=e30]:
+            - text: 📑 Článek
+            - generic [ref=e31]: PDF
+          - generic [ref=e32]:
+            - text: 🖼️ Poster
+            - generic [ref=e33]: PDF
+          - generic [ref=e34]:
+            - text: 📚 Dokumentace
+            - generic [ref=e35]: MD
+      - generic [ref=e36] [cursor=pointer]:
+        - heading "Mark Joly" [level=2] [ref=e37]
+        - generic [ref=e38]: Bezpilotní letoun se schopností vertikálního vzletu a přistání (VTOL) schopný přenášet komunikační modul
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - text: 🎤 Prezentace
+            - generic [ref=e41]: chybí
+          - generic [ref=e42]:
+            - text: 📑 Článek
+            - generic [ref=e43]: PDF
+          - generic [ref=e44]:
+            - text: 🖼️ Poster
+            - generic [ref=e45]: PDF
+          - generic [ref=e46]:
+            - text: 📚 Dokumentace
+            - generic [ref=e47]: PDF
+      - generic [ref=e48] [cursor=pointer]:
+        - heading "Jiří Kotlas" [level=2] [ref=e49]
+        - generic [ref=e50]: Systém na řízení firemních procesů a dokumentů
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - text: 🎤 Prezentace
+            - generic [ref=e53]: HTML
+          - generic [ref=e54]:
+            - text: 📑 Článek
+            - generic [ref=e55]: PDF
+          - generic [ref=e56]:
+            - text: 🖼️ Poster
+            - generic [ref=e57]: IMAGE
+          - generic [ref=e58]:
+            - text: 📚 Dokumentace
+            - generic [ref=e59]: MD
+      - generic [ref=e60] [cursor=pointer]:
+        - heading "Adam Mikulič" [level=2] [ref=e61]
+        - generic [ref=e62]: Komunikační modul pro bezpilotní letoun
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - text: 🎤 Prezentace
+            - generic [ref=e65]: PDF/DOWNLOAD
+          - generic [ref=e66]:
+            - text: 📑 Článek
+            - generic [ref=e67]: PDF
+          - generic [ref=e68]:
+            - text: 🖼️ Poster
+            - generic [ref=e69]: PDF
+          - generic [ref=e70]:
+            - text: 📚 Dokumentace
+            - generic [ref=e71]: MD/HTML

@@ -1,0 +1,127 @@
+{
+  "rok": "2025/2026",
+  "skola": "Gymnázium Havlíčkův Brod",
+  "predmet": "Informatika",
+  "vedouci": "Ing. Adam Ferencz",
+  "deadline": "2026-04-30",
+  "obecne_zadani": "README.md",
+  "students": [
+    {
+      "id": "holecek",
+      "name": "Josef Holeček",
+      "title": "Webový portál pro kroužky a trenéry v Havlíčkově Brodě",
+      "folder": "odevzdani_2026/projekt_holecek",
+      "readme": "odevzdani_2026/projekt_holecek/README.md",
+      "zadani": "zadani_2026_oficial_md/zadani_josef_holecek.md",
+      "prezentace": [
+        { "kind": "pdf", "label": "PDF prezentace", "path": "odevzdani_2026/projekt_holecek/prezentace/prezentace - Webový portál kroužky Havlíčkův Brod.pdf" }
+      ],
+      "paper": [
+        { "kind": "pdf", "label": "Článek (PDF)", "path": "odevzdani_2026/projekt_holecek/paper/Maturitní_článěk- Webový portál kroužky Havlíčkův Brod.pdf" }
+      ],
+      "poster": [
+        { "kind": "pdf", "label": "Poster (PDF)", "path": "odevzdani_2026/projekt_holecek/poster/plakát - Webový portál kroužky Havlíčkův Brod.pdf" }
+      ],
+      "dokumentace": [
+        { "kind": "md", "label": "Technická dokumentace (MD)", "path": "odevzdani_2026/projekt_holecek/dokumentace/TECHNICKA_DOKUMENTACE.md" }
+      ],
+      "projekt": [],
+      "hodnoceni_vedouciho": null,
+      "hodnoceni_oponenta": null
+    },
+    {
+      "id": "jakubek",
+      "name": "Jakub Jakůbek",
+      "title": "Webová aplikace pro správu a distribuci školních propagačních předmětů",
+      "folder": "odevzdani_2026/projekt_jakubek",
+      "readme": "odevzdani_2026/projekt_jakubek/README.md",
+      "zadani": "zadani_2026_oficial_md/zadani_jakub_jakubek.md",
+      "prezentace": [
+        { "kind": "html", "label": "Webová prezentace", "path": "odevzdani_2026/projekt_jakubek/prezentace/index (2).html" }
+      ],
+      "paper": [
+        { "kind": "pdf", "label": "Článek (PDF)", "path": "odevzdani_2026/projekt_jakubek/paper/Maturitní_projekt___GHB___2026 (1).pdf" }
+      ],
+      "poster": [
+        { "kind": "pdf", "label": "Poster (PDF)", "path": "odevzdani_2026/projekt_jakubek/poster/GHB Merch (2).pdf" }
+      ],
+      "dokumentace": [
+        { "kind": "md", "label": "Dokumentace (MD)", "path": "odevzdani_2026/projekt_jakubek/dokumentace/DOKUMENTACE.md" }
+      ],
+      "projekt": [
+        { "kind": "download", "label": "Zdrojové kódy (7z)", "path": "odevzdani_2026/projekt_jakubek/projekt/school-merch.7z" }
+      ],
+      "hodnoceni_vedouciho": null,
+      "hodnoceni_oponenta": null
+    },
+    {
+      "id": "joly",
+      "name": "Mark Joly",
+      "title": "Bezpilotní letoun se schopností vertikálního vzletu a přistání (VTOL) schopný přenášet komunikační modul",
+      "folder": "odevzdani_2026/projekt_joly",
+      "readme": "odevzdani_2026/projekt_joly/README.md",
+      "zadani": "zadani_2026_oficial_md/zadani_mark_joly.md",
+      "prezentace": [],
+      "paper": [
+        { "kind": "pdf", "label": "Článek (PDF)", "path": "odevzdani_2026/projekt_joly/paper/Clanek_joly.pdf" }
+      ],
+      "poster": [
+        { "kind": "pdf", "label": "Poster (PDF)", "path": "odevzdani_2026/projekt_joly/poster/Poster_joly.pdf" }
+      ],
+      "dokumentace": [
+        { "kind": "pdf", "label": "Technická dokumentace (PDF)", "path": "odevzdani_2026/projekt_joly/dokumentace/Technicka_dokumentace_joly.pdf" }
+      ],
+      "projekt": [],
+      "hodnoceni_vedouciho": null,
+      "hodnoceni_oponenta": null
+    },
+    {
+      "id": "kotlas",
+      "name": "Jiří Kotlas",
+      "title": "Systém na řízení firemních procesů a dokumentů",
+      "folder": "odevzdani_2026/projekt_kotlas",
+      "readme": "odevzdani_2026/projekt_kotlas/README.md",
+      "zadani": "zadani_2026_oficial_md/zadani_jiri_kotlas.md",
+      "prezentace": [
+        { "kind": "html", "label": "Webová prezentace", "path": "odevzdani_2026/projekt_kotlas/prezentace/index.html" }
+      ],
+      "paper": [
+        { "kind": "pdf", "label": "Článek (PDF)", "path": "odevzdani_2026/projekt_kotlas/paper/Clanek_projekt__manager_Kotlas.pdf" }
+      ],
+      "poster": [
+        { "kind": "image", "label": "Poster (PNG)", "path": "odevzdani_2026/projekt_kotlas/poster/Poster-Kotlas.png" }
+      ],
+      "dokumentace": [
+        { "kind": "md", "label": "Technická dokumentace (MD)", "path": "odevzdani_2026/projekt_kotlas/dokumentace/technicka_dokumentace.md" }
+      ],
+      "projekt": [],
+      "hodnoceni_vedouciho": null,
+      "hodnoceni_oponenta": null
+    },
+    {
+      "id": "mikulic",
+      "name": "Adam Mikulič",
+      "title": "Komunikační modul pro bezpilotní letoun",
+      "folder": "odevzdani_2026/projekt_mikulic",
+      "readme": "odevzdani_2026/projekt_mikulic/README.md",
+      "zadani": "zadani_2026_oficial_md/zadani_adam_mikulic.md",
+      "prezentace": [
+        { "kind": "pdf", "label": "PDF (konvertováno z PPTX)", "path": "odevzdani_2026/projekt_mikulic/prezentace/Komunikační modul pro bezpilotní letoun.pdf" },
+        { "kind": "download", "label": "Originál PPTX (PowerPoint)", "path": "odevzdani_2026/projekt_mikulic/prezentace/Komunikační modul pro bezpilotní letoun.pptx" }
+      ],
+      "paper": [
+        { "kind": "pdf", "label": "Článek (PDF)", "path": "odevzdani_2026/projekt_mikulic/paper/Maturitní_projekt.pdf" }
+      ],
+      "poster": [
+        { "kind": "pdf", "label": "Poster (PDF)", "path": "odevzdani_2026/projekt_mikulic/poster/Komunikační modul pro bezpilotní letoun.pdf" }
+      ],
+      "dokumentace": [
+        { "kind": "md", "label": "Technická dokumentace (MD)", "path": "odevzdani_2026/projekt_mikulic/dokumentace/TECHNICAL_DOCS.md" },
+        { "kind": "html", "label": "Rozšířená dokumentace (web)", "path": "odevzdani_2026/projekt_mikulic/dokumentace/site/index.html" }
+      ],
+      "projekt": [],
+      "hodnoceni_vedouciho": null,
+      "hodnoceni_oponenta": null
+    }
+  ]
+}

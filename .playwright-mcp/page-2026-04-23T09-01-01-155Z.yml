@@ -1,0 +1,37 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "🎓 Maturita 2026 — přehled prací" [level=1] [ref=e4]
+      - generic [ref=e5]: Gymnázium Havlíčkův Brod · Informatika · vedoucí Ing. Adam Ferencz · deadline 30. 4. 2026
+    - navigation [ref=e6]:
+      - link "Přehled" [ref=e7] [cursor=pointer]:
+        - /url: "#/"
+      - link "Obecné zadání" [ref=e8] [cursor=pointer]:
+        - /url: README.md
+  - main [ref=e9]:
+    - generic [ref=e72]:
+      - generic [ref=e226] [cursor=pointer]: ← Zpět na přehled
+      - generic [ref=e227]:
+        - heading "Jiří Kotlas" [level=2] [ref=e228]
+        - paragraph [ref=e229]: Systém na řízení firemních procesů a dokumentů
+      - generic [ref=e230]:
+        - generic [ref=e231] [cursor=pointer]: 📄 Zadání
+        - generic [ref=e233] [cursor=pointer]: 🎤 Prezentace
+        - generic [ref=e235] [cursor=pointer]: 📑 Článek
+        - generic [ref=e237] [cursor=pointer]: 🖼️ Poster
+        - generic [ref=e239] [cursor=pointer]: 📚 Dokumentace
+        - generic [ref=e241] [cursor=pointer]: 💾 Projekt
+        - generic [ref=e243] [cursor=pointer]: 📝 README
+        - generic [ref=e245] [cursor=pointer]: 👨‍🏫 Posudek vedoucího
+        - generic [ref=e247] [cursor=pointer]: 🧑‍⚖️ Posudek oponenta
+      - generic [ref=e250]:
+        - generic [ref=e251]:
+          - generic [ref=e252]:
+            - generic [ref=e253]: Poster (PNG)
+            - generic [ref=e254]: image
+          - generic [ref=e255]:
+            - link "↗ Otevřít v novém okně" [ref=e256] [cursor=pointer]:
+              - /url: odevzdani_2026/projekt_kotlas/poster/Poster-Kotlas.png
+            - link "⬇ Stáhnout" [ref=e257] [cursor=pointer]:
+              - /url: odevzdani_2026/projekt_kotlas/poster/Poster-Kotlas.png
+        - img "Poster (PNG)" [ref=e258]

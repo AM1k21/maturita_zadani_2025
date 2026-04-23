@@ -1,0 +1,201 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "🎓 Maturita 2026 — přehled prací" [level=1] [ref=e4]
+      - generic [ref=e5]: Gymnázium Havlíčkův Brod · Informatika · vedoucí Ing. Adam Ferencz · deadline 30. 4. 2026
+    - navigation [ref=e6]:
+      - link "Přehled" [ref=e7] [cursor=pointer]:
+        - /url: "#/"
+      - link "Obecné zadání" [ref=e8] [cursor=pointer]:
+        - /url: README.md
+  - main [ref=e9]:
+    - generic [ref=e72]:
+      - generic [ref=e193] [cursor=pointer]: ← Zpět na přehled
+      - generic [ref=e194]:
+        - heading "Jiří Kotlas" [level=2] [ref=e195]
+        - paragraph [ref=e196]: Systém na řízení firemních procesů a dokumentů
+      - generic [ref=e197]:
+        - generic [ref=e198] [cursor=pointer]: 📄 Zadání
+        - generic [ref=e200] [cursor=pointer]: 🎤 Prezentace
+        - generic [ref=e202] [cursor=pointer]: 📑 Článek
+        - generic [ref=e204] [cursor=pointer]: 🖼️ Poster
+        - generic [ref=e206] [cursor=pointer]: 📚 Dokumentace
+        - generic [ref=e208] [cursor=pointer]: 💾 Projekt
+        - generic [ref=e210] [cursor=pointer]: 📝 README
+        - generic [ref=e212] [cursor=pointer]: 👨‍🏫 Posudek vedoucího
+        - generic [ref=e214] [cursor=pointer]: 🧑‍⚖️ Posudek oponenta
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - generic [ref=e220]: Webová prezentace
+            - generic [ref=e221]: html
+          - generic [ref=e222]:
+            - link "↗ Otevřít v novém okně" [ref=e223] [cursor=pointer]:
+              - /url: odevzdani_2026/projekt_kotlas/prezentace/index.html
+            - link "⬇ Stáhnout" [ref=e224] [cursor=pointer]:
+              - /url: odevzdani_2026/projekt_kotlas/prezentace/index.html
+        - iframe [ref=e225]:
+          - generic [active] [ref=f1e1]:
+            - main [ref=f1e2]:
+              - generic [ref=f1e4]:
+                - heading "Maturitní projekt" [level=3] [ref=f1e5]
+                - heading "Project Manager" [level=1] [ref=f1e6]
+                - paragraph [ref=f1e7]: Informační systém pro řízení zakázek, dokumentů a přístupových práv v malé firmě
+                - generic [ref=f1e8]: Symfony 7.4 + PHP 8.3 PostgreSQL 15 Docker
+                - paragraph [ref=f1e9]: "Autor: Jiří Kotlas • Gymnázium Havlíčkův Brod • Obhajoba: 2026"
+              - generic [ref=f1e10]:
+                - heading "Proč tento projekt vznikl?" [level=2] [ref=f1e11]
+                - generic [ref=f1e12]:
+                  - generic [ref=f1e13]:
+                    - heading "Co menší firmy trápí?" [level=3] [ref=f1e14]
+                    - list [ref=f1e15]:
+                      - listitem [ref=f1e16]: "Ztráta informací: Data jsou rozházená v e-mailech, Excelu a na discích."
+                      - listitem [ref=f1e17]: "Chaos v dokumentech: Často se neví, která verze smlouvy nebo nabídky je ta konečná."
+                      - listitem [ref=f1e18]: "Ztráta času: Zjistit, v jakém stavu se reálně zakázka nachází, zabírá zbytečně moc času."
+                  - generic [ref=f1e19]:
+                    - heading "Co mé řešení přináší?" [level=3] [ref=f1e20]
+                    - list [ref=f1e21]:
+                      - listitem [ref=f1e22]: "Vše na jednom místě: Přehledný tok od prvotní nabídky až po zaplacenou fakturu."
+                      - listitem [ref=f1e23]: "Jasná pravidla: Systém striktně hlídá, kdo má k jakým složkám přístup."
+                      - listitem [ref=f1e24]: "Méně starostí pro vedení: Okamžitá a bezchybná data pro rychlé rozhodování."
+              - generic [ref=f1e25]:
+                - heading "Proč nevyužít existující řešení na trhu?" [level=2] [ref=f1e26]
+                - paragraph [ref=f1e27]: Zavedené systémy (Caflou, Raynet) jsou kvalitní, pro malé firmy ale přinášejí úskalí.
+                - generic [ref=f1e28]:
+                  - generic [ref=f1e29]:
+                    - heading "Přizpůsobitelnost" [level=3] [ref=f1e30]
+                    - list [ref=f1e31]:
+                      - listitem [ref=f1e32]: Krabicová řešení nutí měnit zvyky.
+                      - listitem [ref=f1e33]:
+                        - text: Můj systém je
+                        - strong [ref=f1e34]: přesně na míru
+                        - text: .
+                      - listitem [ref=f1e35]: Díky modularitě se snadno upraví.
+                  - generic [ref=f1e36]:
+                    - heading "Cena a licence" [level=3] [ref=f1e37]
+                    - list [ref=f1e38]:
+                      - listitem [ref=f1e39]:
+                        - text: Drahé poplatky
+                        - strong [ref=f1e40]: za každého uživatele
+                        - text: .
+                      - listitem [ref=f1e41]: Studentský vývoj ušetřil prvotní náklady.
+                      - listitem [ref=f1e42]:
+                        - text: Firma neplatí
+                        - strong [ref=f1e43]: žádné měsíční paušály
+                        - text: .
+                  - generic [ref=f1e44]:
+                    - heading "Kontrola dat" [level=3] [ref=f1e45]
+                    - list [ref=f1e46]:
+                      - listitem [ref=f1e47]:
+                        - text: Možnost běžet
+                        - strong [ref=f1e48]: zcela lokálně
+                        - text: .
+                      - listitem [ref=f1e49]: Data zůstávají pouze na firemním serveru.
+                      - listitem [ref=f1e50]: Žádné sdílení do cloudů třetích stran.
+              - generic [ref=f1e51]:
+                - heading "Zvolené technologie" [level=2] [ref=f1e52]
+                - generic [ref=f1e53]:
+                  - generic [ref=f1e54]:
+                    - heading "PHP Symfony PHP 8.3 & Symfony 7.4" [level=3] [ref=f1e55]:
+                      - img "PHP" [ref=f1e56]
+                      - img "Symfony" [ref=f1e57]
+                      - text: PHP 8.3 & Symfony 7.4
+                    - paragraph [ref=f1e58]:
+                      - text: Moderní PHP zaručuje rychlý chod. Framework
+                      - strong [ref=f1e59]: Symfony
+                      - text: jsem vybral pro jeho mimořádně přísnou a srozumitelnou strukturu a prvotřídní vrstvu zabezpečení, která se ve firmách osvědčila.
+                  - generic [ref=f1e60]:
+                    - heading "PostgreSQL PostgreSQL 15" [level=3] [ref=f1e61]:
+                      - img "PostgreSQL" [ref=f1e62]
+                      - text: PostgreSQL 15
+                    - paragraph [ref=f1e63]: Extrémně stabilní databáze, ideální pro zachování silných informačních vazeb (mezi klienty, projekty a fakturami) beze strachu z toho, že by se informace někde "rozpojily".
+                  - generic [ref=f1e64]:
+                    - heading "Docker Docker" [level=3] [ref=f1e65]:
+                      - img "Docker" [ref=f1e66]
+                      - text: Docker
+                    - paragraph [ref=f1e67]: Virtualizace. Stará se o to, že systém poběží všude úplně stejně, nezávisle na typu počítače. Prvotní nasazení u firmy je díky izolaci kontejnerů velmi rychlé.
+                  - generic [ref=f1e68]:
+                    - heading "Twig Bootstrap Twig & Bootstrap 5" [level=3] [ref=f1e69]:
+                      - img "Twig" [ref=f1e70]
+                      - img "Bootstrap" [ref=f1e71]
+                      - text: Twig & Bootstrap 5
+                    - paragraph [ref=f1e72]: Pro rychlé, čisté a přehledné vykreslování v prohlížeči přímo ze serveru. Stránky nejsou zbytečně zahlcené těžkým Javascriptem a tím pádem jsou velmi svižné a responzivní.
+              - generic [ref=f1e73]:
+                - heading "Architektura a fungování" [level=2] [ref=f1e74]
+                - generic [ref=f1e75]:
+                  - list [ref=f1e77]:
+                    - listitem [ref=f1e78]:
+                      - strong [ref=f1e79]: "Ověřený MVC vzor:"
+                      - text: Striktně oddělená data od vzhledu brání zmatkům.
+                    - listitem [ref=f1e80]:
+                      - strong [ref=f1e81]: "Monolit zlevňuje údržbu:"
+                      - text: Web a databáze na jednom serveru bez složitých API.
+                    - listitem [ref=f1e82]:
+                      - strong [ref=f1e83]: "Bezpečné ORM:"
+                      - text: Ochranu před hackery a SQL injekcemi zajišťuje Doctrine.
+                  - generic [ref=f1e84]:
+                    - img "Architektura" [ref=f1e85] [cursor=pointer]
+                    - paragraph [ref=f1e86]: Invertovaný pohled na Server-Side architekturu
+              - generic [ref=f1e87]:
+                - heading "Ověření v praxi" [level=2] [ref=f1e88]
+                - generic [ref=f1e89]:
+                  - generic [ref=f1e90]:
+                    - heading "Testovací VPS" [level=3] [ref=f1e91]
+                    - paragraph [ref=f1e92]: Aplikace byla nasazena na testovací VPS od Forpsi, kde běžela v podmínkách blízkých reálnému provozu.
+                  - generic [ref=f1e93]:
+                    - heading "Reální uživatelé" [level=3] [ref=f1e94]
+                    - paragraph [ref=f1e95]: Systém byl vyzkoušen reálnými uživateli firmy na běžných scénářích práce se zakázkami a dokumenty.
+                  - generic [ref=f1e96]:
+                    - heading "Další krok" [level=3] [ref=f1e97]
+                    - paragraph [ref=f1e98]: Po finálním doladění je plánované nasazení do produkčního provozu jako hlavní interní systém firmy.
+              - generic [ref=f1e99]:
+                - heading "Ukázka procesu" [level=2] [ref=f1e100]
+                - generic [ref=f1e103]:
+                  - generic [ref=f1e104]: 1Uživatel
+                  - text: ›
+                  - generic [ref=f1e105]: 2Klient
+                  - text: ›
+                  - generic [ref=f1e106]: 3Projekt
+                  - text: ›
+                  - generic [ref=f1e107]: 4Dokumenty
+                  - text: ›
+                  - generic [ref=f1e108]: 5Fakturace
+                  - text: ›
+                  - generic [ref=f1e109]: 6Report
+              - generic [ref=f1e110]:
+                - heading "Plán dalšího rozvoje platformy" [level=2] [ref=f1e111]
+                - generic [ref=f1e112]:
+                  - generic [ref=f1e113]:
+                    - heading "Automatizace sestav" [level=3] [ref=f1e114]
+                    - paragraph [ref=f1e115]:
+                      - text: Vkládání dat přímo do dynamicky vygenerovaných zpráv
+                      - strong [ref=f1e116]: (formát PDF)
+                      - text: ", konec zdlouhavým manuálním přepisům od nadepsání na portál."
+                  - generic [ref=f1e117]:
+                    - heading "API Integrace" [level=3] [ref=f1e118]
+                    - paragraph [ref=f1e119]:
+                      - text: Využití chráněného komunikačního můstku přes
+                      - strong [ref=f1e120]: REST / Webhooks protokoly
+                      - text: ", pro předávání tržeb pod externí účetní nebo státní správu spolehlivě z centrálního zdroje."
+                  - generic [ref=f1e121]:
+                    - heading "AI podpora" [level=3] [ref=f1e122]
+                    - paragraph [ref=f1e123]: Zapracování strojového průzkumu nad historickými úkoly k odhadu volné firemní kapacity či ke zrychlení operativních čtení vložených externích skenů z let nedávno uplynulých.
+              - generic [ref=f1e125]:
+                - heading "Děkuji Vám za pozornost" [level=1] [ref=f1e126]
+                - paragraph [ref=f1e127]: Nyní je prostor pro dotazy expertní komise.
+                - list [ref=f1e129]:
+                  - listitem [ref=f1e130]:
+                    - strong [ref=f1e131]: "Autor projektu:"
+                    - text: Jiří Kotlas (Gymnázium Havlíčkův Brod)
+                  - listitem [ref=f1e132]:
+                    - strong [ref=f1e133]: "Technologické jádro:"
+                    - text: PHP 8.3 / Symfony 7.4 / PostgreSQL 15
+                  - listitem [ref=f1e134]:
+                    - strong [ref=f1e135]: "Dopad díla:"
+                    - text: Komplexní sjednocení pracovního stolu se striktní logikou, eliminující administrativní chaos dříve nespecifikovaných M:N vazeb firmy na trhu lokálním i vzdáleném.
+            - generic [ref=f1e136]:
+              - button "Předchozí" [ref=f1e137]
+              - generic [ref=f1e138]: 1/15
+              - button "Další" [ref=f1e139]
+              - button "Fullscreen" [ref=f1e140]
+            - img "Fullscreen Diagram" [ref=f1e142]

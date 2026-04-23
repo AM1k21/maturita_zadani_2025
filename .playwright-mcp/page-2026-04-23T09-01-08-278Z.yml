@@ -1,0 +1,56 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "🎓 Maturita 2026 — přehled prací" [level=1] [ref=e4]
+      - generic [ref=e5]: Gymnázium Havlíčkův Brod · Informatika · vedoucí Ing. Adam Ferencz · deadline 30. 4. 2026
+    - navigation [ref=e6]:
+      - link "Přehled" [ref=e7] [cursor=pointer]:
+        - /url: "#/"
+      - link "Obecné zadání" [ref=e8] [cursor=pointer]:
+        - /url: README.md
+  - main [ref=e9]:
+    - generic [ref=e72]:
+      - generic [ref=e284] [cursor=pointer]: ← Zpět na přehled
+      - generic [ref=e285]:
+        - heading "Adam Mikulič" [level=2] [ref=e286]
+        - paragraph [ref=e287]: Komunikační modul pro bezpilotní letoun
+      - generic [ref=e288]:
+        - generic [ref=e289] [cursor=pointer]: 📄 Zadání
+        - generic [ref=e291] [cursor=pointer]: 🎤 Prezentace
+        - generic [ref=e293] [cursor=pointer]: 📑 Článek
+        - generic [ref=e295] [cursor=pointer]: 🖼️ Poster
+        - generic [ref=e297] [cursor=pointer]: 📚 Dokumentace
+        - generic [ref=e299] [cursor=pointer]: 💾 Projekt
+        - generic [ref=e301] [cursor=pointer]: 📝 README
+        - generic [ref=e303] [cursor=pointer]: 👨‍🏫 Posudek vedoucího
+        - generic [ref=e305] [cursor=pointer]: 🧑‍⚖️ Posudek oponenta
+      - generic [ref=e307]:
+        - generic [ref=e308]:
+          - generic [ref=e309]:
+            - generic [ref=e310]:
+              - generic [ref=e311]: PDF (konvertováno z PPTX)
+              - generic [ref=e312]: pdf
+            - generic [ref=e313]:
+              - link "↗ Otevřít v novém okně" [ref=e314] [cursor=pointer]:
+                - /url: odevzdani_2026/projekt_mikulic/prezentace/Komunika%C4%8Dn%C3%AD%20modul%20pro%20bezpilotn%C3%AD%20letoun.pdf
+              - link "⬇ Stáhnout" [ref=e315] [cursor=pointer]:
+                - /url: odevzdani_2026/projekt_mikulic/prezentace/Komunika%C4%8Dn%C3%AD%20modul%20pro%20bezpilotn%C3%AD%20letoun.pdf
+          - iframe [ref=e316]:
+            
+        - generic [ref=e317]:
+          - generic [ref=e318]:
+            - generic [ref=e319]:
+              - generic [ref=e320]: Originál PPTX (PowerPoint)
+              - generic [ref=e321]: download
+            - generic [ref=e322]:
+              - link "↗ Otevřít v novém okně" [ref=e323] [cursor=pointer]:
+                - /url: odevzdani_2026/projekt_mikulic/prezentace/Komunika%C4%8Dn%C3%AD%20modul%20pro%20bezpilotn%C3%AD%20letoun.pptx
+              - link "⬇ Stáhnout" [ref=e324] [cursor=pointer]:
+                - /url: odevzdani_2026/projekt_mikulic/prezentace/Komunika%C4%8Dn%C3%AD%20modul%20pro%20bezpilotn%C3%AD%20letoun.pptx
+          - generic [ref=e325]:
+            - paragraph [ref=e326]: Tento soubor není možné zobrazit přímo v prohlížeči.
+            - paragraph [ref=e327]: odevzdani_2026/projekt_mikulic/prezentace/Komunikační modul pro bezpilotní letoun.pptx
+            - link "↗ Otevřít v novém okně" [ref=e328] [cursor=pointer]:
+              - /url: odevzdani_2026/projekt_mikulic/prezentace/Komunika%C4%8Dn%C3%AD%20modul%20pro%20bezpilotn%C3%AD%20letoun.pptx
+            - link "⬇ Stáhnout" [ref=e329] [cursor=pointer]:
+              - /url: odevzdani_2026/projekt_mikulic/prezentace/Komunika%C4%8Dn%C3%AD%20modul%20pro%20bezpilotn%C3%AD%20letoun.pptx
