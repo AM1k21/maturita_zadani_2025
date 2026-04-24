@@ -119,7 +119,9 @@
         { "kind": "md", "label": "Technická dokumentace (MD)", "path": "odevzdani_2026/projekt_mikulic/dokumentace/TECHNICAL_DOCS.md" },
         { "kind": "html", "label": "Rozšířená dokumentace (web)", "path": "odevzdani_2026/projekt_mikulic/dokumentace/site/index.html" }
       ],
-      "projekt": [],
+      "projekt": [
+        { "kind": "download", "label": "Zdrojové kódy (ZIP)", "path": "odevzdani_2026/projekt_mikulic/projekt/projekt.zip" }
+      ],
       "hodnoceni_vedouciho": null,
       "hodnoceni_oponenta": null
     }
